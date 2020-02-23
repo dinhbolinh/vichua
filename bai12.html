@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo from và điều khiển</title>
+</head>
+<body>
+   <h1> <div style="color:green;
+    text-align: center;">Phiếu đắng ký chương trình khuyến mãi</div></h1>
+    <table border="1" cellspacing="0" style="border : blue;
+    background: rgb(195, 224, 143);" align="center">
+<tbody>
+    <tr>
+        <td>Họ và tên</td>
+        <td>
+            <input type="text" name="fullname" size="30">
+        </td>
+    </tr>
+    <tr>
+        <td>Địa chỉ</td>
+        <td>
+            <input type="text" name="phonenumber" size="30">
+        </td>
+    </tr>
+    <tr>
+        <td>Phái</td>
+        <td>
+            <input type="radio" name="sex" valie="Nam">nam
+            <input type="radio" name="sex" valie="Nam">nữ
+        </td>
+    </tr>
+    <tr>
+        <td>Nghề nghiệp</td>
+        <td>
+            <select name="job" id="job">
+                <option value>Bác sĩ</option>
+                <option value>Kỹ sư</option>
+                <option value>Giáo viên</option>
+                <option value>Khác</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Chọn sản phẩm tham gia</td>
+        <td>
+            <select name="product" id multiple size="4">
+            <option value selected>Kem đánh răng</option>
+            <option value>Bột giặt</option>
+            <option value>Dầu xả</option>
+            <option value>Dầu gội</option> 
+        </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Số người tham gia dự đoán</td>
+        <td>
+            <input type="text" size 30>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            <input id="button" type="reset" name value="Đồng ý">
+            <div id="label" style="color:red;"></div>
+        </td>
+    </tr>
+    <script>
+        document.getElementById("button").onclick=funtion
+        {
+            var
+            showLabel=document.getElementById("label");
+            showLabel.innerText="Chúc mừng bạn đăng ký thành công"
+        }
+        
+    </script>
+</tbody>    
+</table>
+
+</body>
+</html>

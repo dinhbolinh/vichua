@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form  và các điều khiển</title>
+</head>
+<body>
+    <div style="color:  brown; text-align: center;font-size: 40px;"
+    > Đăng nhập</div>
+    <table border="1" cellspacing="0" style="background-color: skyblue;
+    border:violet;" align="center">
+    <tbody>
+        <tr>
+         <td>Mã người dùng</td>
+        <td>
+            <input id="id" type="text" name="account" size="30px">
+        </td> 
+    </tr>
+        <tr>
+            <td>Mật khẩu</td>
+            <td>
+                <input type="password" name="password" size="30px">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button id="clicktoshow">Đồng ý</button>
+                <div id="label"></div>
+            </td>
+        </tr>
+        <script>
+            document.getElementById("clicktoshow").onclick=function()
+            {
+                var
+                idname=document.getElementById("id").vablue
+                var
+                showlabel=doccument.getElementById("label");
+                var content=idname;
+                showlabel.innerText=content;
+            }
+        </script>
+    </tbody>
+</table>
+</body>
+</html>
